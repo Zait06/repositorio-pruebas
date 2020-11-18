@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/repositorio-pruebas/static/css/main.7d38871c.chunk.css",
+    "main.js": "/repositorio-pruebas/static/js/main.1720be9c.chunk.js",
+    "main.js.map": "/repositorio-pruebas/static/js/main.1720be9c.chunk.js.map",
+    "runtime-main.js": "/repositorio-pruebas/static/js/runtime-main.931e4c3a.js",
+    "runtime-main.js.map": "/repositorio-pruebas/static/js/runtime-main.931e4c3a.js.map",
+    "static/css/2.f4ae4707.chunk.css": "/repositorio-pruebas/static/css/2.f4ae4707.chunk.css",
+    "static/js/2.8a2d36d0.chunk.js": "/repositorio-pruebas/static/js/2.8a2d36d0.chunk.js",
+    "static/js/2.8a2d36d0.chunk.js.map": "/repositorio-pruebas/static/js/2.8a2d36d0.chunk.js.map",
+    "index.html": "/repositorio-pruebas/index.html",
+    "static/css/2.f4ae4707.chunk.css.map": "/repositorio-pruebas/static/css/2.f4ae4707.chunk.css.map",
+    "static/css/main.7d38871c.chunk.css.map": "/repositorio-pruebas/static/css/main.7d38871c.chunk.css.map",
+    "static/js/2.8a2d36d0.chunk.js.LICENSE.txt": "/repositorio-pruebas/static/js/2.8a2d36d0.chunk.js.LICENSE.txt",
+    "static/media/4.148c2853.png": "/repositorio-pruebas/static/media/4.148c2853.png",
+    "static/media/a1.d944e918.png": "/repositorio-pruebas/static/media/a1.d944e918.png",
+    "static/media/c_texto.3366d717.png": "/repositorio-pruebas/static/media/c_texto.3366d717.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.931e4c3a.js",
+    "static/css/2.f4ae4707.chunk.css",
+    "static/js/2.8a2d36d0.chunk.js",
+    "static/css/main.7d38871c.chunk.css",
+    "static/js/main.1720be9c.chunk.js"
+  ]
+}

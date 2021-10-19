@@ -1,51 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 2330:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var map = {
-	"./pwa-action-sheet.entry.js": [
-		2740,
-		736
-	],
-	"./pwa-camera-modal-instance.entry.js": [
-		7514,
-		736
-	],
-	"./pwa-camera-modal.entry.js": [
-		2800,
-		736
-	],
-	"./pwa-camera.entry.js": [
-		5153,
-		736
-	],
-	"./pwa-toast.entry.js": [
-		8250,
-		736
-	]
-};
-function webpackAsyncContext(req) {
-	if(!__webpack_require__.o(map, req)) {
-		return Promise.resolve().then(() => {
-			var e = new Error("Cannot find module '" + req + "'");
-			e.code = 'MODULE_NOT_FOUND';
-			throw e;
-		});
-	}
-
-	var ids = map[req], id = ids[0];
-	return __webpack_require__.e(ids[1]).then(() => {
-		return __webpack_require__(id);
-	});
-}
-webpackAsyncContext.keys = () => (Object.keys(map));
-webpackAsyncContext.id = 2330;
-module.exports = webpackAsyncContext;
-
-/***/ }),
-
 /***/ 8867:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
@@ -90,7 +45,7 @@ var vue_router_esm_bundler = __webpack_require__(2090);
 
 const routes = [{
   path: '/',
-  component: () => Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(271)]).then(__webpack_require__.bind(__webpack_require__, 5271)),
+  component: () => Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(93)]).then(__webpack_require__.bind(__webpack_require__, 4093)),
   children: [{
     path: '',
     component: () => Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(430)]).then(__webpack_require__.bind(__webpack_require__, 6430))
@@ -194,7 +149,7 @@ var register_service_worker = __webpack_require__(1413);
   // to ServiceWorkerContainer.register()
   // https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register#Parameter
   // registrationOptions: { scope: './' },
-  ready(registration) {
+  ready() {
     console.log('Service worker is active.');
   },
 
@@ -293,7 +248,7 @@ async function start({
 }
 
 app(runtime_dom_esm_bundler/* createApp */.ri, quasar_user_options).then(app => {
-  return Promise.all([Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5954))]).then(bootFiles => {
+  return Promise.all([Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9570, 23))]).then(bootFiles => {
     const boot = bootFiles.map(entry => entry.default).filter(entry => typeof entry === 'function');
     start(app, boot);
   });
@@ -301,19 +256,27 @@ app(runtime_dom_esm_bundler/* createApp */.ri, quasar_user_options).then(app => 
 
 /***/ }),
 
-/***/ 5954:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 9570:
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _ionic_pwa_elements_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7226);
+function notificationPermissions() {
+  return new Promise(resolve => {
+    Notification.requestPermission(result => {
+      respuesta.value = result;
+      let granted = true;
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
-  (0,_ionic_pwa_elements_loader__WEBPACK_IMPORTED_MODULE_0__/* .defineCustomElements */ .q)(window);
-});
+      if (result === 'denied' || result === 'default') {
+        granted = false;
+      }
+
+      resolve({
+        granted
+      });
+    });
+  });
+}
+
+notificationPermissions().then(res => console.log(res)).catch(err => $q.notify(err));
 
 /***/ })
 
@@ -451,7 +414,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + "." + {"193":"63264ce7","271":"9928722f","430":"ee0f4497"}[chunkId] + ".js";
+/******/ 			return "js/" + chunkId + "." + {"93":"7e306060","193":"63264ce7","430":"ee0f4497"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -643,4 +606,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app.05fdaa2f.js.map
+//# sourceMappingURL=app.e51043ba.js.map

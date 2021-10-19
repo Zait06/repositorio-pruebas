@@ -90,7 +90,7 @@ var vue_router_esm_bundler = __webpack_require__(2090);
 
 const routes = [{
   path: '/',
-  component: () => Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(323)]).then(__webpack_require__.bind(__webpack_require__, 9323)),
+  component: () => Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(271)]).then(__webpack_require__.bind(__webpack_require__, 5271)),
   children: [{
     path: '',
     component: () => Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(430)]).then(__webpack_require__.bind(__webpack_require__, 6430))
@@ -194,7 +194,7 @@ var register_service_worker = __webpack_require__(1413);
   // to ServiceWorkerContainer.register()
   // https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register#Parameter
   // registrationOptions: { scope: './' },
-  ready() {
+  ready(registration) {
     console.log('Service worker is active.');
   },
 
@@ -451,7 +451,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + "." + {"193":"63264ce7","323":"e9d4e9a9","430":"ee0f4497"}[chunkId] + ".js";
+/******/ 			return "js/" + chunkId + "." + {"193":"63264ce7","271":"9928722f","430":"ee0f4497"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -643,4 +643,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app.d9908112.js.map
+//# sourceMappingURL=app.05fdaa2f.js.map
